@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewportal" content="width=device-width, initial-scale=1">
+<style>
+
+body{font-family: Arial, serif , sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #FF5733;
+  color: white;
+  padding: 12px 20px;
+  border: none ;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #FA8072;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #F08080;
+  padding: 20px;
+}
+div{
+
+background-color: #F08080  ;
+  padding: 20px;
+  }
+</style>
+</head>
+<body>
+<h2><div style="border: 1px solid black" >Pre-School Package Registration Form</div></h2>
+
+<div class="container">
+  <form action="/action_page.txt">
+    <label for="fname">First Name *</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name *</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    
+    <p>Please select your gender:</p>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label>
+<br>
+
+<br>
+  <label for="fathername">Father's Name *</label>
+    <input type="text" id="fathername" name="fathername" placeholder="">
+    
+    <label for="mothername">Mother's Name *</label>
+    <input type="text" id="mothername" name="mothername" placeholder="">
+    
+    <label for="email">Email Id *</label>
+    <input type="text" id="email" name="email" placeholder="">
+ 
+  <label for="birthday">Student's Birthday *</label>
+    <input type="text" id="birthday" name="birthday" placeholder="">
+  
+  <label for="contactno">Contact Number *</label>
+    <input type="text" id="contactno" name="contactno" placeholder="">
+     
+    <label for="country">Country *</label>
+    <select id="country" name="country">
+    <option value="india">India</option>
+    <option value="uk">UK</option>
+   <option value="japan">Japan</option>
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+<label for="city">City *</label>
+    <input type="text" id="city" name="city" placeholder="">
+    
+   <label for="address">Address *</label>
+    <input type="text" id="address" name="address" placeholder="">
+    
+<label for="zipcode">Zip Code *</label>
+    <input type="text" id="zipcode" name="zipcode" placeholder="">
+<br>
+    <p>Do you recieve Text at this number? *</p>
+  <input type="radio" id="yes" name="yes" value="yes">
+  <label for="yes">Yes</label><br>
+  <input type="radio" id="no" name="no" value="no">
+  <label for="no">No</label><br>
+  <br>
+  <p>Please Select your Preferred Session *</p>
+  <input type="radio" id="4days" name="4days" value="4days">
+  <label for="4days">4 Days</label><br>
+  <input type="radio" id="5days" name="5days" value="5days">
+  <label for="5days">5 Days</label><br>
+  <br>
+  
+    <p>Please Select your Preferred Timing *</p>
+  <input type="radio" id="mtime" name="mtime" value="mtime">
+  <label for="mtime">Morning (8:30-11:30 A.M.)</label><br>
+  <input type="radio" id="atime" name="mtime" value="mtime">
+  <label for="mtime">Afternoon (12:30-3:30 P.M.)</label><br>
+   <br>  <br> 
+   <button onclick="submitForm()">Submit</button>
+   
+<script>
+function submitForm() {
+  alert("Form Submitted Successfully!!!");
+}
+</script>
+
+  </form>
+</div>
+
+</body>
+</html>
